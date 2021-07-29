@@ -12,37 +12,46 @@
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous">
+    <!-- Css custom link   -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome icon link   -->
+    <script src="https://kit.fontawesome.com/fb4ca43703.js"
+        crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid pt-3 pb-5" id="header-bg">
         <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-light  ">
-                <button class="navbar-toggler" type="button"
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler " type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon  rounded"
+                        id="nav-button"></span>
                 </button>
                 <div class="collapse navbar-collapse "
                     id="navbarSupportedContent">
                     <ul class="navbar-nav  ms-auto mb-lg-0">
                         <li class="nav-item pe-5">
-                            <a class="nav-link active" aria-current="page"
-                                href="#">Home</a>
-                        </li>
-                        <li class="nav-item   pe-5">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item   pe-5">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link active text-white"
+                                aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item  pe-5">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link text-white" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item   pe-5">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item  pe-5">
+                            <a class="nav-link text-white" href="#">Contact</a>
                         </li>
                         <li>
-                            <button type="button" class="btn btn-warning active"
+                            <button type="button" id="nav-button"
+                                class="btn rounded text-white active"
                                 data-bs-toggle="button" autocomplete="off"
                                 aria-pressed="true">Login</button>
                         </li>
@@ -51,13 +60,324 @@
                 </div>
             </nav>
         </section>
+        <section class="container">
+            <div class="row">
+
+                <div class="col-lg-6 pt-5 mt-2 " id="brand-info">
+                    <p class="text-white " id="p-text1">
+                        Computer-controlled digital transistorized with
+                        electronic advance
+                    </p>
+                    <h1 class="text-white " id="heading-info">
+                        Honda CBR 300R
+                    </h1>
+                    <p class="text-white" id="p-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" id="nav-button"
+                        class="btn rounded text-white active"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Purchase</button>
+                    <!-- end  -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="exampleModalLabel">Bike info</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Ipsam quo sed officia
+                                        sapiente accusantium optio pariatur
+                                        enim, nobis ducimus. Velit odio cumque
+                                        qui, porro ipsam quia. Et reiciendis aut
+                                        nisi!</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Quos quasi debitis
+                                        voluptates? Ut, necessitatibus ratione.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------end------------------  -->
+
+                </div>
+                <div class="col-lg-6 ">
+                    <img class="img-fluid" src="images/header-bike.png" alt="">
+                </div>
+            </div>
+
+        </section>
 
     </header>
-    <menu>
+    <main>
+        <section class="container">
+            <div class="jhgjfh">
+                <h1 class="hfj" id="heading-info">Fetured Bikes 2021</h1>
+                <p class="p-text1 ">
+                    Best bike collectionBest bike collection
+                </p>
+                <hr>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4">
+                    <img src="images/feature-bike.jpg" class="bike-img"
+                        width="288" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/feature-bike.jpg" width="288" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/feature-bike.jpg" class="bike-img"
+                        width="288" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h1>latest News</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card h-100 p-4">
+                        <img src="images/bike-1.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Quasi magni
+                                incidunt at repudiandae ipsam voluptatibus
+                                nostrum libero reprehenderit unde ipsa!</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <small class="text-muted"><button
+                                    class="btn btn-warning">Read
+                                    More</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-4">
+                        <img src="images/bike-2.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Motorcycles & Scooters</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Non asperiores
+                                ullam sequi quasi neque iste laborum nostrum
+                                nulla odio sapiente.</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <small class="text-muted"><button
+                                    class="btn btn-warning">Read
+                                    More</button></small>
+                        </div>
 
-    </menu>
-    <footer>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-4">
+                        <img src="images/bike-3.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">2021 Honda CBR500R</h5>
+                            <p class="card-text">This is a longer card with
+                                supporting text below as a natural lead-in to
+                                additional content.</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <small class="text-muted"><button
+                                    class="btn btn-warning">Read
+                                    More</button></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <section class="container">
+            <h1><span>Happy Clients says</span></h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="images/user-1.png"
+                                class="card-img-top rounded-circle w-50"
+                                alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div
+                                class="icon-cl d-flex flex-row justify-content-center">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="text-center">Regina Miles</p>
+                            <p class="text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="images/user-2.png"
+                                class="card-img-top rounded-circle w-50"
+                                alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div
+                                class="icon-cl d-flex flex-row justify-content-center">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="text-center">Regina Miles</p>
+                            <p class="text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="images/user-3.jpg"
+                                class="card-img-top rounded-circle w-50"
+                                alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Slate helps you see how
+                                many more days you need
+                                to work to reach your financial
+                                goal for the month and year.</p>
+                            <div
+                                class="icon-cl d-flex flex-row justify-content-center">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="text-center">Regina Miles</p>
+                            <p class="text-center">Banker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h1>Happy Clients says</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/faq.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="me-auto">
+                        <p>What are the most important things I should
+                            know about riding a bike?
+                            <a class="btn" data-bs-toggle="collapse"
+                                href="#collapseExample1" role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse
+                                component. This panel is hidden by default but
+                                revealed when the user activates the relevant
+                                trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dfg">
+                        <p>What are the most important things I should
+                            know about riding a bike?
+                            <a class="btn" data-bs-toggle="collapse"
+                                href="#collapseExample2" role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse
+                                component. This panel is hidden by default but
+                                revealed when the user activates the relevant
+                                trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dfg">
+                        <p>What are the most important things I should
+                            know about riding a bike?
+                            <a class="btn" data-bs-toggle="collapse"
+                                href="#collapseExample4" role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse
+                                component. This panel is hidden by default but
+                                revealed when the user activates the relevant
+                                trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dfg">
+                        <p>What are the most important things I should
+                            know about riding a bike?
+                            <a class="btn" data-bs-toggle="collapse"
+                                href="#collapseExample5" role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse
+                                component. This panel is hidden by default but
+                                revealed when the user activates the relevant
+                                trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <br><br><br><br><br>
+    </main>
+    <footer class="container-fluid">
+        <div>
+
+        </div>
     </footer>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
